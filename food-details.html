@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Details | Royal Bite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Royal Bite</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Food Details</h1>
+        <p>Discover your favourite meal</p>
+    </section>
+
+    <section class="details-section">
+
+        <div class="details-image">
+            <img id="detailImage" src="clburger.jpeg"
+                 alt="Food Image">
+        </div>
+
+        <div class="details-content">
+
+            <span class="food-tag">Customer Favourite</span>
+
+            <h2 id="detailName">Classic Burger</h2>
+
+            <p id="detailDescription">
+                Fresh and delicious classic burger.
+            </p>
+
+            <h3 id="detailPrice">Rs. 650</h3>
+
+            <label for="quantity">Select Quantity:</label>
+
+            <input type="number" id="quantity"
+                   value="1" min="1" max="10">
+
+            <button class="btn" id="addDetailCart">
+                Add to Cart
+            </button>
+
+            <a href="menu.html" class="back-link">
+                Back to Menu
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Bite. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation | Royal Bite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Royal Bite</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Reserve Your Table</h1>
+        <p>Enjoy a wonderful dining experience with us.</p>
+    </section>
+
+    <section class="reservation-section">
+
+        <div class="reservation-card">
+
+            <h2>Book Your Table</h2>
+
+            <form id="reservationForm">
+
+                <label for="guestName">Full Name</label>
+                <input type="text" id="guestName"
+                    placeholder="Enter your name" required>
+
+                <label for="guestEmail">Email Address</label>
+                <input type="email" id="guestEmail"
+                    placeholder="Enter your email" required>
+
+                <label for="guestPhone">Phone Number</label>
+                <input type="tel" id="guestPhone"
+                    placeholder="Enter phone number" required>
+
+                <label for="reservationDate">Reservation Date</label>
+                <input type="date" id="reservationDate" required>
+
+                <label for="reservationTime">Reservation Time</label>
+                <input type="time" id="reservationTime" required>
+
+                <label for="guests">Number of Guests</label>
+                <select id="guests" required>
+                    <option value="">Select Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                </select>
+
+                <label for="specialRequest">Special Request</label>
+                <textarea id="specialRequest"
+                    placeholder="Any special request?"></textarea>
+
+                <button type="submit" class="btn">
+                    Reserve Now
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Bite. All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

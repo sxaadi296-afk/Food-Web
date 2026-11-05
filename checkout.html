@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Royal Bite</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Royal Bite</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Checkout</h1>
+        <p>Complete your order details</p>
+    </section>
+
+    <section class="checkout-section">
+
+        <div class="checkout-form">
+            <h2>Delivery Information</h2>
+
+            <form id="checkoutForm">
+
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                    placeholder="Enter your name" required>
+
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone"
+                    placeholder="Enter phone number" required>
+
+                <label for="customerAddress">Delivery Address</label>
+                <textarea id="customerAddress"
+                    placeholder="Enter your complete address"
+                    required></textarea>
+
+                <label for="paymentMethod">Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                    <option value="Online Payment">Online Payment</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Place Order
+                </button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Bite. All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Royal Bite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Royal <span>Bite</span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Our Delicious Menu</h1>
+        <p>Explore your favourite food at Royal Bite</p>
+    </section>
+
+    <section class="menu-section">
+
+        <h2>Explore Our Food</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search your favourite food..."
+        >
+
+        <div class="category-filters">
+            <button onclick="filterFood('all')">All</button>
+            <button onclick="filterFood('burger')">Burgers</button>
+            <button onclick="filterFood('pizza')">Pizza</button>
+            <button onclick="filterFood('pasta')">Pasta</button>
+            <button onclick="filterFood('dessert')">Deserts</button>
+        </div>
+
+        <!-- 👇 Yeh container hona lazmi hai -->
+        <div id="foodContainer" class="food-container"></div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Bite. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 👇 Yahan 'js/' hata diya hai kyun ke script file direct root mein hai -->
+    <script src="script.js"></script>
+</body>
+</html>
